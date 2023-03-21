@@ -59,7 +59,7 @@
         map.addControl(layerSwitcher);
 
         const puntos = new ol.layer.Vector({
-          source: new ol.source.VectorSource({
+          source: new ol.source.Vector({
             title: 'Puntos',
             features: new ol.format.GeoJSON().readFeature(geojsonSteps, {dataProjection: 'EPSG: 4326', featureProjection: 'EPSG: 3857'}),
             //features: JSON.stringify(geojsonSteps, null, 2),
